@@ -1,0 +1,76 @@
+@import (reference) "./variables.less";
+
+@font-face {
+  font-family: "SFUIDisplay";
+  font-weight: 600;
+  font-style: normal;
+
+  src: url("../assets/fonts/SFUIDisplay-Semibold.woff2") format("woff2"),
+  url("../assets/fonts/SFUIDisplay-Semibold.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SFUIDisplay";
+  font-weight: 700;
+  font-style: normal;
+
+  src: url("../assets/fonts/SFUIDisplay-Bold.woff2") format("woff2"),
+  url("../assets/fonts/SFUIDisplay-Bold.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SFUIDisplay";
+  font-weight: 900;
+  font-style: normal;
+
+  src: url("../assets/fonts/SFUIDisplay-Heavy.woff2") format("woff2"),
+  url("../assets/fonts/SFUIDisplay-Heavy.woff") format("woff");
+  font-display: swap;
+}
+
+html {
+  color: @color-text;
+
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 26px;
+}
+
+html.fonts-loaded {
+  font-family: "SFUIDisplay", Arial, sans-serif;
+  font-weight: 600;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+button {
+  margin: 0;
+  padding: 0;
+
+  &::selection {
+    color: @color-text;
+    background: @color-brand;
+  }
+}
+
+a {
+  text-decoration: none;
+
+  color: inherit;
+
+  &::selection {
+    color: @color-text-second;
+    background: @color-brand;
+  }
+}

@@ -1,0 +1,40 @@
+@import (reference) '../../less/variables.less';
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  list-style: none;
+
+  user-select: none;
+
+  &__item {
+    display: inline-block;
+
+    transition: @transition;
+
+    color: @color-text;
+
+    &:not(:last-child) {
+      padding-right: 16px;
+    }
+
+    @media screen and (max-width: @hamburger) {
+      // display: block;
+
+      // border-bottom: 1px solid @color-gray-light;
+    }
+  }
+
+  &__item:not(:last-child) {
+    @media screen and (min-width: @hamburger) {
+      margin-right: 40px;
+    }
+  }
+
+  &__item:hover {
+    @media screen and (min-width: @hamburger) {
+      color: @color-brand;
+    }
+  }
+}

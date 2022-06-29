@@ -1,0 +1,111 @@
+@import (reference) "../../less/variables.less";
+
+.header {
+  position: relative;
+
+  padding: 12px 0;
+
+  background: @color-third;
+  box-shadow: @shadow-second;
+
+  @media screen and (min-width: @hamburger) {
+    padding: 16px 0;
+  }
+
+  &.is-fixed {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    right: 0;
+    left: 0;
+
+    transform: translateY(-110%);
+    animation: dropBlock 0.3s ease-in-out 0.1s forwards;
+    @keyframes dropBlock {
+      100% {
+        transform: translateY(0);
+      }
+    }
+  }
+
+  &__top {
+    position: relative;
+
+    display: flex;
+
+    padding-bottom: 12px;
+
+    justify-content: space-between;
+
+    @media screen and (min-width: @hamburger) {
+      padding-bottom: 0;
+    }
+
+    &::before {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      left: -16px;
+
+      width: 100vw;
+      height: 1px;
+
+      content: "";
+
+      background-color: @color-first;
+
+      align-items: center;
+
+      @media screen and (min-width: @hamburger) {
+        display: none;
+      }
+    }
+
+    @media screen and (min-width: @hamburger) {
+      position: static;
+    }
+  }
+
+  &__wrapper {
+    @media screen and (min-width: @hamburger) {
+      position: relative;
+
+      display: flex;
+
+      padding-right: 133px;
+
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  &__dropdown {
+    padding-top: 12px;
+
+    @media screen and (min-width: @hamburger) {
+      padding-top: 0;
+    }
+  }
+
+  &__menu {
+    max-width: 360px;
+
+    @media screen and (min-width: @hamburger) {
+      max-width: none;
+    }
+  }
+
+  &__horizont-line {
+    position: absolute;
+    z-index: 1000;
+    bottom: -2px;
+    left: 0;
+
+    height: 2px;
+
+    content: "";
+    transition: @transition;
+
+    background-color: @color-brand;
+  }
+}

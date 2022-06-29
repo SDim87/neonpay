@@ -1,0 +1,37 @@
+@import (reference) '../../less/variables.less';
+
+.button {
+  display: inline-block;
+  overflow: hidden;
+
+  box-sizing: border-box;
+  padding: 0 24px;
+  line-height: 40px;
+
+  cursor: pointer;
+  transition: @transition;
+  text-align: center;
+
+  color: @color-text-second;
+  border: none;
+  border-radius: 32px;
+
+  font-weight: bold;
+
+  &_brand {
+    background-color: @color-brand;
+  }
+
+  &_brand:hover {
+    background-color: rgba(@color-brand, 0.8);
+  }
+
+  &_absoluted {
+    @media screen and (min-width: @hamburger) {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+    }
+  }
+}

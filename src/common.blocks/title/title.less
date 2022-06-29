@@ -1,0 +1,28 @@
+@import (reference) '../../less/variables.less';
+
+.title {
+  text-align: center;
+  color: @color-text;
+
+  &_two {
+    line-height: 48px;
+    font-size: 48px;
+
+    @media screen and (max-width: @tablet-small) {
+      line-height: 40px;
+      font-size: 32px;
+    }
+  }
+
+  &_light {
+    color: @color-text-second;
+  }
+
+  &_order_l {
+    margin-bottom: 48px;
+
+    @media screen and (max-width: @tablet-small) {
+      margin-bottom: 24px;
+    }
+  }
+}
