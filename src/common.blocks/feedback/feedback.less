@@ -1,0 +1,45 @@
+@import (reference) "../../less/variables.less";
+
+.feedback {
+  padding: 32px 0;
+
+  border-top: 1px solid @color-gray;
+  border-bottom: 1px solid @color-gray;
+
+  @media screen and (min-width: @desktop) {
+    padding: 64px 0;
+  }
+
+  &__wrapper {
+    margin-top: 32px;
+
+    @media screen and (min-width: @tablet-small) {
+      display: flex;
+      align-items: baseline;
+    }
+
+    @media screen and (min-width: @desktop) {
+      margin-top: 56px;
+    }
+  }
+
+  &__item {
+    max-width: 400px;
+    margin: 0 auto;
+
+    &:not(:last-child) {
+      padding-bottom: 16px;
+
+      @media screen and (min-width: @tablet-small) {
+        padding-bottom: 0;
+        padding-right: 16px;
+      }
+    }
+
+    &:nth-child(3) {
+      @media screen and (min-width: @desktop) {
+        min-width: 666px;
+      }
+    }
+  }
+}

@@ -5,7 +5,7 @@
 
   padding: 12px 0;
 
-  background: @color-third;
+  background: @color-first;
   box-shadow: @shadow-second;
 
   @media screen and (min-width: @hamburger) {
@@ -52,9 +52,13 @@
 
       content: "";
 
-      background-color: @color-first;
+      background-color: @color-gray;
 
       align-items: center;
+
+      @media screen and (min-width: @tablet-small) {
+        left: -32px;
+      }
 
       @media screen and (min-width: @hamburger) {
         display: none;

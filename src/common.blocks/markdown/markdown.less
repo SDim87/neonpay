@@ -1,0 +1,44 @@
+@import (reference) "../../less/variables.less";
+
+.markdown {
+  display: flex;
+
+  width: 56px;
+  height: 56px;
+
+  border-radius: 100%;
+  background-color: @color-brand;
+
+  justify-content: center;
+  align-items: center;
+
+  &_size_l {
+    width: 80px;
+    height: 80px;
+
+    @media screen and (min-width: @desktop) {
+      width: 104px;
+      height: 104px;
+    }
+
+    & .icon {
+      width: 36px;
+      height: 36px;
+
+      @media screen and (min-width: @desktop) {
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+
+  &_wrap {
+    // 9px пустота от img
+    margin: 23px auto 0;
+
+    @media screen and (min-width: @desktop) {
+      // 9px пустота от img
+      margin: 47px auto 0;
+    }
+  }
+}

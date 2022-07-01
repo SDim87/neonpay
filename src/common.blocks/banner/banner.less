@@ -1,0 +1,65 @@
+@import (reference) '../../less/variables.less';
+
+.banner {
+  background-image: url('banner__img.png');
+  background-position: -40px bottom;
+  background-repeat: no-repeat;
+  background-size: 112vw;
+  padding: 40px 0 355px;
+
+  @media screen and (min-width: @phone) {
+    padding: 40px 0 500px;
+  }
+
+  @media screen and (min-width: @phone-landscape) {
+    padding: 40px 0 600px;
+  }
+
+  @media screen and (min-width: @tablet-small) {
+    padding: 40px 0 700px;
+  }
+
+  @media screen and (min-width: @tablet) {
+    padding: 147px 0;
+    background-position: right bottom;
+    background-size: 700px;
+  }
+
+  @media screen and (min-width: @hamburger) {
+    background-size: 750px;
+  }
+
+  @media screen and (min-width: @desktop) {
+    background-size: 900px;
+  }
+
+  &__top {
+    text-align: center;
+
+    @media screen and (min-width: @tablet) {
+      text-align: left;
+      max-width: 450px;
+    }
+  }
+
+  &__text {
+    margin: 16px auto 24px;
+
+    font-size: 20px;
+    line-height: 24px;
+    max-width: 550px;
+
+    @media screen and (min-width: @hamburger) {
+      margin: 32px 0 52px;
+
+      font-size: 28px;
+      line-height: 32px;
+    }
+  }
+
+  & .title_one {
+    @media screen and (min-width: @tablet) {
+      text-align: left;
+    }
+  }
+}

@@ -2,27 +2,26 @@
 
 .title {
   text-align: center;
+
   color: @color-text;
 
-  &_two {
-    line-height: 48px;
-    font-size: 48px;
+  &_one {
+    font-size: 32px;
+    line-height: 40px;
 
-    @media screen and (max-width: @tablet-small) {
-      line-height: 40px;
-      font-size: 32px;
+    @media screen and (min-width: @desktop) {
+      font-size: 74px;
+      line-height: 80px;
     }
   }
 
-  &_light {
-    color: @color-text-second;
-  }
+  &_two {
+    font-size: 28px;
+    line-height: 32px;
 
-  &_order_l {
-    margin-bottom: 48px;
-
-    @media screen and (max-width: @tablet-small) {
-      margin-bottom: 24px;
+    @media screen and (min-width: @desktop) {
+      font-size: 74px;
+      line-height: 80px;
     }
   }
 }

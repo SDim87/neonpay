@@ -70,100 +70,275 @@
     </header>
 
     <main class="main js-header__indent">
-      <!-- ========== Coast ============== -->
-      <div class="body__indent" id="coast">
-        <section class="coast">
-          <div class="container">
-            <h2 class="title title_two title_order_l">
-              Цены
-            </h2>
-            <div class="coast__wrapper">
-              <ul class="coast__list">
-                <li class="coast__item js_coast__item" id="coast__block-1">
-                  <p class="coast__title">Электромонтаж</p>
-                  <p class="coast__text js_coast__text">
-                    Рассчитайте стоимость электромонтажных работ.
-                  </p>
-                </li>
-              </ul>
+      <!-- ========== Banner ============== -->
+
+      <section class="banner">
+        <div class="container">
+          <div class="banner__top">
+            <h1 class="title title_one banner__title">
+              Пополни&nbsp;счет Apple&nbsp;ID&nbsp;за&nbsp;7&nbsp;секунд
+            </h1>
+            <p class="banner__text">
+              Пользуйся без&nbsp;ограничений: Apple&nbsp;Music, iCloud,
+              приложения из&nbsp;App Store и&nbsp;многое другое.
+            </p>
+            <button class="button button_brand button_size_l">Пополнить</button>
+          </div>
+        </div>
+      </section>
+      <!-- ========== Advantage ============== -->
+      <section class="advantage">
+        <div class="container">
+          <div class="advantage__wrapper">
+            <div class="advantage__img">
+              <picture>
+                <source
+                  srcset="${require('./common.blocks/advantage/advantage_1.png')}"
+                  media="(min-width: 1440px)"
+                  width="392"
+                  height="488"
+                />
+                <img
+                  class="image"
+                  src="./common.blocks/advantage/advantage_1_m.png"
+                  alt="Преимущества"
+                />
+              </picture>
+            </div>
+            <div class="advantage__img">
+              <picture>
+                <source
+                  srcset="${require('./common.blocks/advantage/advantage_2.png')}"
+                  media="(min-width: 1440px)"
+                  width="392"
+                  height="488"
+                />
+                <img
+                  class="image"
+                  src="./common.blocks/advantage/advantage_2_m.png"
+                  alt="Преимущества"
+                />
+              </picture>
+            </div>
+            <div class="advantage__img">
+              <picture>
+                <source
+                  srcset="${require('./common.blocks/advantage/advantage_3.png')}"
+                  media="(min-width: 1440px)"
+                  width="392"
+                  height="488"
+                />
+                <img
+                  class="image"
+                  src="./common.blocks/advantage/advantage_3_m.png"
+                  alt="Преимущества"
+                />
+              </picture>
             </div>
           </div>
-        </section>
-      </div>
-      <!-- ========== Advantages ============== -->
-      <section class="advantages" id="advantages">
-        <div class="container container_position">
-          <h2 class="title title_two title_order_l title_light">
-            Наши преимущества
-          </h2>
-          <div class="advantages__wrapper">
-            <div class="advantages__item">
-              <div class="circle circle_big circle_order_s">
-                <svg class="circle__icon">
-                  <use xlink:href="#quality"></use>
-                </svg>
-              </div>
-              <p class="advantages__text">
-                Высокая квалификация персонала - все наши сотрудники
-                профессионалы в своем направлении с опытом работы от 10-ти лет.
-              </p>
+        </div>
+      </section>
+      <!-- ========== point 1 ============== -->
+      <section class="point">
+        <div class="container">
+          <div class="point__top">
+            <p class="point__question">Как это работает?</p>
+            <h2 class="title title_two">
+              Выбираете сертификат<br />для&nbsp;покупки
+            </h2>
+          </div>
+          <div class="point__wrapper">
+            <div>
+              <img
+                class="image"
+                src="./common.blocks/point/1000.png"
+                alt="Выбери сертификат"
+              />
             </div>
-            <div class="advantages__item">
-              <div class="circle circle_big circle_order_s">
-                <svg class="circle__icon">
-                  <use xlink:href="#certificate"></use>
-                </svg>
-              </div>
-              <p class="advantages__text">
-                Наш выстроенный таймменеджмент и план работ гарантирует
-                выполнение заказа качественно и в срок.
-              </p>
+            <div>
+              <img
+                class="image"
+                src="./common.blocks/point/2000.png"
+                alt="Выбери сертификат"
+              />
             </div>
-            <div class="advantages__item">
-              <div class="circle circle_big circle_order_s">
-                <svg class="circle__icon">
-                  <use xlink:href="#screwdriver"></use>
-                </svg>
-              </div>
-              <p class="advantages__text">
-                Используем только профессиальное оборудование для лучшего
-                результата работ.
-              </p>
+            <div>
+              <img
+                class="image"
+                src="./common.blocks/point/3000.png"
+                alt="Выбери сертификат"
+              />
             </div>
-            <div class="advantages__item">
-              <div class="circle circle_big circle_order_s">
-                <svg class="circle__icon">
-                  <use xlink:href="#contract"></use>
-                </svg>
-              </div>
-              <p class="advantages__text">
-                Внимательное отношение к потребностям наших клиентов позволяет
-                подобрать максимально удобный график работ в самое удобное время
-                для заказчика.
-              </p>
+          </div>
+          <div class="markdown markdown_wrap">
+            <svg class="icon icon_size_s icon_first">
+              <use xlink:href="#arrow_down"></use>
+            </svg>
+          </div>
+        </div>
+      </section>
+      <!-- ========== point 2 ============== -->
+      <section class="point">
+        <div class="container">
+          <div class="point__top">
+            <h2 class="title title_two">
+              Оплачиваете удобным<br />для&nbsp;Вас&nbsp;способом
+            </h2>
+          </div>
+          <div class="point__wrapper">
+            <div class="point__item">
+              <picture>
+                <source
+                  srcset="${require('./common.blocks/point/pay_1.png')}"
+                  media="(min-width: 1440px)"
+                />
+                <img
+                  class="image"
+                  src="./common.blocks/point/pay_1_m.png"
+                  alt="Оплата удобным способом"
+                />
+              </picture>
             </div>
-            <div class="advantages__item">
-              <div class="circle circle_big circle_order_s">
-                <svg class="circle__icon">
-                  <use xlink:href="#dollar"></use>
-                </svg>
-              </div>
-              <p class="advantages__text">
-                Мы практикуем подбор индивидуальной, удобной формы расчета для
-                каждого нашего клиента.
-              </p>
+            <div class="point__item">
+              <picture>
+                <source
+                  srcset="${require('./common.blocks/point/pay_2.png')}"
+                  media="(min-width: 1440px)"
+                />
+                <img
+                  class="image"
+                  src="./common.blocks/point/pay_2_m.png"
+                  alt="Оплата удобным способом"
+                />
+              </picture>
             </div>
-            <div class="advantages__item">
-              <div class="circle circle_big circle_order_s">
-                <svg class="circle__icon">
-                  <use xlink:href="#antivirus"></use>
-                </svg>
-              </div>
-              <p class="advantages__text">
-                Проверенная временем и опытом система оценки качества
-                обеспечивает высокие показатели предоставления услуг ремонта
-                нашим клиентам.
-              </p>
+            <div class="point__item">
+              <picture>
+                <source
+                  srcset="${require('./common.blocks/point/pay_3.png')}"
+                  media="(min-width: 1440px)"
+                />
+                <img
+                  class="image"
+                  src="./common.blocks/point/pay_3_m.png"
+                  alt="Оплата удобным способом"
+                />
+              </picture>
+            </div>
+          </div>
+          <div class="markdown markdown_wrap">
+            <svg class="icon icon_size_s icon_first">
+              <use xlink:href="#arrow_down"></use>
+            </svg>
+          </div>
+        </div>
+      </section>
+      <!-- ========== point 3 ============== -->
+      <section class="point">
+        <div class="container">
+          <div class="point__top">
+            <h2 class="title title_two">
+              Получаете&nbsp;код<br />для&nbsp;пополнения Apple&nbsp;ID
+            </h2>
+          </div>
+          <div class="point__wrapper point__wrapper_no-order">
+            <div class="point__item">
+              <img
+                class="image"
+                src="./common.blocks/point/get_id.png"
+                alt="Оплата удобным способом"
+              />
+            </div>
+          </div>
+          <div class="markdown markdown_wrap">
+            <svg class="icon icon_size_s icon_first">
+              <use xlink:href="#arrow_down"></use>
+            </svg>
+          </div>
+        </div>
+      </section>
+      <!-- ========== point 4 ============== -->
+      <section class="point">
+        <div class="container">
+          <div class="point__top">
+            <h2 class="title title_two">
+              Активируйте<br />подарочную&nbsp;карту
+            </h2>
+          </div>
+          <div class="point__wrapper point__wrapper_no-order">
+            <div class="point__item">
+              <img
+                class="image"
+                src="./common.blocks/point/active_card.png"
+                alt="Оплата удобным способом"
+              />
+            </div>
+          </div>
+          <div class="markdown markdown_wrap">
+            <svg class="icon icon_size_s icon_first">
+              <use xlink:href="#arrow_down"></use>
+            </svg>
+          </div>
+        </div>
+      </section>
+      <!-- ========== point 5 ============== -->
+      <section class="point point_indent">
+        <div class="container">
+          <div class="point__top">
+            <h2 class="title title_two">
+              Ваш&nbsp;баланс Apple&nbsp;ID<br />пополнен
+            </h2>
+          </div>
+          <div class="markdown markdown_wrap markdown_size_l">
+            <svg class="icon icon_first">
+              <use xlink:href="#done"></use>
+            </svg>
+          </div>
+        </div>
+      </section>
+      <!-- ========== feedback ============== -->
+      <section class="feedback">
+        <div class="container">
+          <h2 class="title title_two">Отзывы</h2>
+          <div class="feedback__wrapper">
+            <div class="feedback__item">
+              <picture>
+                <source
+                  srcset="${require('./common.blocks/feedback/feedback_1.png')}"
+                  media="(min-width: 1440px)"
+                />
+                <img
+                  class="image"
+                  src="./common.blocks/feedback/feedback_1_m.png"
+                  alt="Отзыв"
+                />
+              </picture>
+            </div>
+            <div class="feedback__item">
+              <picture>
+                <source
+                  srcset="${require('./common.blocks/feedback/feedback_2.png')}"
+                  media="(min-width: 1440px)"
+                />
+                <img
+                  class="image"
+                  src="./common.blocks/feedback/feedback_2_m.png"
+                  alt="Отзыв"
+                />
+              </picture>
+            </div>
+            <div class="feedback__item">
+              <picture>
+                <source
+                  srcset="${require('./common.blocks/feedback/feedback_3.png')}"
+                  media="(min-width: 1440px)"
+                />
+                <img
+                  class="image"
+                  src="./common.blocks/feedback/feedback_3_m.png"
+                  alt="Отзыв"
+                />
+              </picture>
             </div>
           </div>
         </div>
