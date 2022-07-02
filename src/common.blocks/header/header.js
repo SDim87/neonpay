@@ -1,7 +1,7 @@
 const $scrollLine = $('.js-header__horizont-line')
 const $blockPay = $('.js-header__pay')
 const $blockFastBuy = $('.js-header__fast-buy')
-const EXTRA_OFFSET = 700
+const EXTRA_OFFSET = 600
 
 // Возвращает высоту до блока сверху
 function getOffsetFromBlock(block) {
