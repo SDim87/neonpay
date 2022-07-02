@@ -1,0 +1,139 @@
+@import (reference) '../../less/variables.less';
+
+.pay {
+  color: @color-text-second;
+
+  &__wrapper {
+    margin-top: 32px;
+    
+    @media screen and (min-width: @tablet) {
+      margin-top: 56px;
+      display: flex;
+    }
+  }
+
+  &__item {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 24px 24px;
+
+    border-radius: 32px;
+    background-color: @color-second;
+
+    @media screen and (min-width: @desktop) {
+      padding: 24px 32px;
+
+      border-radius: 20px;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 16px;
+
+      @media screen and (min-width: @tablet) {
+        margin-bottom: 0;
+        margin-right: 16px;
+        max-width: none;
+      }
+    }
+  }
+
+  &__img {
+    max-width: 250px;
+    margin: 0 auto;
+    padding: 24px 62px;
+
+    & .image {
+      filter: @shadow-card-mobile;
+
+      @media screen and (min-width: @desktop) {
+        filter: @shadow-card-desktop;
+      }
+    }
+  }
+
+  &__rating {
+    text-align: center;
+
+    font-size: 20px;
+    line-height: 24px;
+
+    @media screen and (min-width: @desktop) {
+      font-size: 30px;
+      line-height: 40px;
+    }
+  }
+
+  &__label {
+    position: relative;
+
+    display: flex;
+
+    & .icon {
+      position: absolute;
+      top: 50%;
+      left: 26px;
+
+      width: 24px;
+      height: 24px;
+
+      transform: translateY(-50%);
+
+      @media screen and (min-width: @desktop) {
+        width: 30px;
+        height: 30px;
+      }
+    }
+
+    &_indent {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__input {
+    display: block;
+
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 16px 0 66px;
+
+    color: @color-text-second;
+    border: none;
+    border-radius: 100px;
+    background-color: @color-gray-light;
+
+    line-height: 54px;
+
+    &::placeholder {
+      color: @color-text-second;
+    }
+
+    &:focus-visible {
+      outline: none;
+    }
+
+    &:-webkit-autofill {
+      transition: background-color 5000s ease-in-out 0s;
+
+      -webkit-text-fill-color: @color-text-second;
+    }
+
+    @media screen and (min-width: @desktop) {
+      font-size: 24px;
+      line-height: 70px;
+    }
+  }
+
+  &__cost {
+    margin-top: 24px;
+
+    text-align: center;
+
+    font-size: 28px;
+    line-height: 32px;
+
+    @media screen and (min-width: @desktop) {
+      font-size: 74px;
+      line-height: 80px;
+    }
+  }
+}

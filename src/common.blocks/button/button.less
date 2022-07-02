@@ -1,4 +1,4 @@
-@import (reference) '../../less/variables.less';
+@import (reference) "../../less/variables.less";
 
 .button {
   display: inline-block;
@@ -6,7 +6,6 @@
 
   box-sizing: border-box;
   padding: 0 24px;
-  line-height: 40px;
 
   cursor: pointer;
   transition: @transition;
@@ -16,8 +15,9 @@
   border: none;
   border-radius: 32px;
 
-  font-weight: bold;
   font-size: 16px;
+  font-weight: bold;
+  line-height: 40px;
 
   @media screen and (min-width: @hamburger) {
     font-size: 18px;
@@ -25,23 +25,61 @@
 
   &_brand {
     background-color: @color-brand;
+
+    &:hover {
+      background-color: rgba(@color-brand, 0.8);
+    }
   }
 
-  &_brand:hover {
-    background-color: rgba(@color-brand, 0.8);
+  &_second {
+    color: @color-second;
+    background-color: @color-first;
+
+    &:hover {
+      background-color: rgba(@color-first, 0.9);
+    }
   }
 
   &_size {
+    padding: 0 24px;
+
+    border-radius: 100px;
+
+    @media screen and (min-width: @hamburger) {
+      padding: 0 64px;
+    }
+
     &_l {
       line-height: 64px;
-      border-radius: 100px;
-      padding: 0 24px;
-      
+
       @media screen and (min-width: @hamburger) {
         line-height: 88px;
-        padding: 0 64px;
       }
     }
+
+    &_xl {
+      line-height: 54px;
+
+      @media screen and (min-width: @hamburger) {
+        line-height: 70px;
+      }
+    }
+
+    &_xxl {
+      line-height: 64px;
+
+      @media screen and (min-width: @hamburger) {
+        font-size: 24px;
+        line-height: 92px;
+      }
+    }
+  }
+
+  &_wrap {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
   }
 
   &_absoluted {
@@ -49,7 +87,12 @@
       position: absolute;
       top: 50%;
       right: 0;
+
       transform: translateY(-50%);
     }
+  }
+
+  &_w_100 {
+    width: 100%;
   }
 }

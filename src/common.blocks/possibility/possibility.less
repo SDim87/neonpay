@@ -1,0 +1,45 @@
+@import (reference) "../../less/variables.less";
+
+.possibility {
+  padding: 32px 0;
+
+  @media screen and (min-width: @desktop) {
+    padding: 90px 0;
+  }
+
+  &__wrapper {
+    margin-top: 32px;
+
+    @media screen and (min-width: @phone-landscape) {
+      display: flex;
+
+      margin: 32px auto 0;
+
+      justify-content: center;
+    }
+
+    @media screen and (min-width: @desktop) {
+      margin: 56px auto 0;
+    }
+  }
+
+  &__img {
+    &:not(:last-child) {
+      padding-bottom: 16px;
+
+      @media screen and (min-width: @phone-landscape) {
+        padding-right: 16px;
+        padding-bottom: 0;
+      }
+
+      @media screen and (min-width: @desktop) {
+        padding-right: 24px;
+        padding-bottom: 0;
+      }
+    }
+
+    & img {
+      height: 100%;
+    }
+  }
+}
