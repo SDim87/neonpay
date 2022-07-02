@@ -1,0 +1,29 @@
+@import (reference) "../../less/variables.less";
+
+.popular-card {
+  position: absolute;
+  z-index: 1;
+  top: -36px;
+  left: 50%;
+
+  box-sizing: border-box;
+  width: 185px;
+  padding: 0 16px;
+
+  transform: translateX(-50%);
+  text-align: center;
+
+  color: @color-text;
+  border: 1px solid @color-gray;
+  border-radius: 32px;
+  background-color: @color-first;
+
+  line-height: 52px;
+
+  @media screen and (min-width: @desktop) {
+    line-height: 70px;
+    font-size: 18px;
+
+    width: 237px;
+  }
+}

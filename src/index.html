@@ -30,7 +30,9 @@
               />
               <span>NeonPay</span>
             </a>
-            <button class="button button_brand button_absoluted">Купить</button>
+            <a class="button button_brand button_absoluted js-navigation__link js-scroll-block" href="#popular">
+              Купить
+            </a>
           </div>
           <div class="header__dropdown js-header__dropdown">
             <div class="header__menu">
@@ -38,7 +40,7 @@
                 <ul class="navigation">
                   <li class="navigation__item">
                     <a
-                      href="#about"
+                      href="#howWorked"
                       class="navigation__link js-navigation__link js-scroll-block"
                     >
                       Как&nbsp;это&nbsp;работает
@@ -46,18 +48,18 @@
                   </li>
                   <li class="navigation__item">
                     <a
-                      href="#coast"
+                      href="#feedback"
                       class="navigation__link js-navigation__link js-scroll-block"
                     >
-                      Возможности
+                      Отзывы
                     </a>
                   </li>
                   <li class="navigation__item">
                     <a
-                      href="#advantages"
+                      href="#possibility"
                       class="navigation__link js-navigation__link js-scroll-block"
                     >
-                      Отзывы
+                      Возможности
                     </a>
                   </li>
                 </ul>
@@ -139,7 +141,7 @@
         </div>
       </section>
       <!-- ========== point 1 ============== -->
-      <section class="point">
+      <section class="point" id="howWorked">
         <div class="container">
           <div class="point__top">
             <p class="point__question">Как это работает?</p>
@@ -297,7 +299,7 @@
         </div>
       </section>
       <!-- ========== feedback ============== -->
-      <section class="feedback">
+      <section class="feedback" id="feedback">
         <div class="container">
           <h2 class="title title_two">Отзывы</h2>
           <div class="feedback__wrapper">
@@ -344,7 +346,7 @@
         </div>
       </section>
       <!-- ========== Possibility ============== -->
-      <section class="possibility">
+      <section class="possibility" id="possibility">
         <div class="container">
           <h2 class="title title_two">
             Сертификат дает<br />возможность покупки
@@ -436,6 +438,7 @@
               <p class="pay__cost">1 300 ₽</p>
             </div>
             <div class="pay__item">
+              <span class="popular-card" id="popular">Популярная карта</span>
               <p class="pay__rating">Номинал – 2000 рублей</p>
               <div class="pay__img">
                 <img
@@ -504,8 +507,9 @@
       </section>
       <div class="fast-buy">
         <div class="container">
-          <button
-            class="button button_brand button_size button_size_xxl button_w_100 button_wrap"
+          <a
+            class="button button_brand button_size button_size_xxl button_w_100 button_wrap js-navigation__link js-scroll-block"
+            href="#popular"
           >
             <img
               class="image fast-buy__logo"
@@ -513,7 +517,7 @@
               alt="Логотип"
             />
             <span>Пополнить Apple ID</span>
-          </button>
+          </a>
         </div>
       </div>
     </main>
