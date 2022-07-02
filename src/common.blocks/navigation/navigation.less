@@ -2,11 +2,13 @@
 
 .navigation {
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+
   list-style: none;
 
   user-select: none;
+
+  justify-content: space-between;
+  flex-wrap: wrap;
 
   &__item {
     display: inline-block;
@@ -14,6 +16,12 @@
     transition: @transition;
 
     color: @color-text;
+
+    font-size: 14px;
+
+    @media screen and (min-width: @tablet) {
+      font-size: 14px;
+    }
 
     &:not(:last-child) {
       padding-right: 16px;

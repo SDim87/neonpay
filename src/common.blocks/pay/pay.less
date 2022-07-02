@@ -1,7 +1,13 @@
-@import (reference) '../../less/variables.less';
+@import (reference) "../../less/variables.less";
 
 .pay {
+  padding-bottom: 32px;
+
   color: @color-text-second;
+
+  @media screen and (min-width: @desktop) {
+    padding-bottom: 56px;
+  }
 
   &__wrapper {
     margin-top: 32px;
@@ -41,6 +47,8 @@
   }
 
   &__img {
+    overflow: hidden;
+
     max-width: 250px;
     margin: 0 auto;
     padding: 24px 62px;
