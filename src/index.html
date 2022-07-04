@@ -13,6 +13,7 @@
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
+    <script src="https://widget.cloudpayments.ru/bundles/cloudpayments.js"></script>
     <title>NeonPay</title>
   </head>
   <body>
@@ -426,7 +427,7 @@
                   <input
                     class="pay__input"
                     type="email"
-                    name="email"
+                    name="email1"
                     id="email1000"
                     placeholder="Введите почту"
                     required
@@ -436,8 +437,8 @@
                   </svg>
                 </label>
                 <button
-                  class="button button_second button_w_100 button_size button_size_xl"
-                  type="submit"
+                  class="button button_second button_w_100 button_size button_size_xl js-pay__btn"
+                  data-type="1000"
                 >
                   Купить
                 </button>
@@ -459,7 +460,7 @@
                   <input
                     class="pay__input"
                     type="email"
-                    name="email"
+                    name="email2"
                     id="email2000"
                     placeholder="Введите почту"
                     required
@@ -469,8 +470,8 @@
                   </svg>
                 </label>
                 <button
-                  class="button button_second button_w_100 button_size button_size_xl"
-                  type="submit"
+                  class="button button_second button_w_100 button_size button_size_xl js-pay__btn"
+                  data-type="2000"
                 >
                   Купить
                 </button>
@@ -491,7 +492,7 @@
                   <input
                     class="pay__input"
                     type="email"
-                    name="email"
+                    name="email3"
                     id="email3000"
                     placeholder="Введите почту"
                     required
@@ -501,8 +502,8 @@
                   </svg>
                 </label>
                 <button
-                  class="button button_second button_size button_size_xl button_w_100 "
-                  type="submit"
+                  class="button button_second button_size button_size_xl button_w_100 js-pay__btn"
+                  data-type="3000"
                 >
                   Купить
                 </button>

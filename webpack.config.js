@@ -26,7 +26,6 @@ module.exports = {
     path: path.resolve(__dirname, './public'),
     publicPath: '/',
     filename: isDevelopment ? '[name].js' : 'js/[name]-[chunkhash:10].js',
-    // filename: 'js/[name].js',
   },
   externals: {
     jquery: 'jQuery',
