@@ -47,6 +47,9 @@
   }
 
   &__img {
+    position: relative;
+    z-index: 1;
+
     overflow: hidden;
 
     max-width: 250px;
@@ -54,10 +57,10 @@
     padding: 24px 62px;
 
     & .image {
-      filter: @shadow-card-mobile;
+      filter: @shadow-card;
 
       @media screen and (min-width: @desktop) {
-        filter: @shadow-card-desktop;
+        filter: @shadow-card;
       }
     }
   }
