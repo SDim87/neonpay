@@ -1,4 +1,4 @@
-@import (reference) '../../less/variables.less';
+@import (reference) "../../less/variables.less";
 
 .navigation {
   display: flex;
@@ -6,8 +6,8 @@
   list-style: none;
 
   user-select: none;
+  // justify-content: space-between;
 
-  justify-content: space-between;
   flex-wrap: wrap;
 
   &__item {
@@ -24,19 +24,21 @@
     }
 
     &:not(:last-child) {
-      padding-right: 16px;
-    }
-  }
+      margin-right: 12px;
 
-  &__item:not(:last-child) {
-    @media screen and (min-width: @hamburger) {
-      margin-right: 40px;
-    }
-  }
+      @media screen and (min-width: @phone-small) {
+        margin-right: 16px;
+      }
 
-  &__item:hover {
-    @media screen and (min-width: @hamburger) {
-      color: @color-brand;
+      @media screen and (min-width: @hamburger) {
+        margin-right: 40px;
+      }
+    }
+
+    &:hover {
+      @media screen and (min-width: @hamburger) {
+        color: @color-brand;
+      }
     }
   }
 }
