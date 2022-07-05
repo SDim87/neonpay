@@ -1,0 +1,152 @@
+@import (reference) "../../less/variables.less";
+
+.popup {
+  box-sizing: border-box;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 24px 16px;
+
+  border-radius: 16px;
+  background-color: @color-first;
+
+  @media screen and (min-width: @tablet-small) {
+    padding: 40px 60px;
+  }
+
+  & .mfp-close {
+    top: 5px;
+    right: 5px;
+
+    transition: @transition;
+  }
+
+  & .icon {
+    display: block;
+
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 32px;
+
+    @media screen and (min-width: @desktop) {
+      width: 80px;
+      height: 80px;
+    }
+
+    &.success {
+      fill: @color-access;
+    }
+
+    &.error {
+      fill: @color-error;
+    }
+  }
+
+  &__title {
+    margin-bottom: 16px;
+
+    color: @color-dark-medium;
+
+    font-size: 16px;
+    line-height: 24px;
+
+    @media screen and (min-width: @desktop) {
+      margin-bottom: 24px;
+
+      font-size: 32px;
+      line-height: 40px;
+    }
+  }
+
+  &__code {
+    padding: 16px 0;
+
+    background-color: @color-gray;
+
+    font-size: 24px;
+    line-height: 32px;
+
+    @media screen and (min-width: @desktop) {
+      font-size: 64px;
+      line-height: 72px;
+    }
+  }
+
+  &__points {
+    display: flex;
+    flex-direction: column;
+
+    margin: 0 auto;
+    margin-top: 24px;
+
+    font-size: 14px;
+    line-height: 20px;
+
+    @media screen and (min-width: @desktop) {
+      padding: 0 88px;
+
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+
+  &__text1 {
+    @media screen and (min-width: @desktop) {
+      margin-top: 24px;
+
+      font-size: 24px;
+      line-height: 32px;
+    }
+  }
+
+  &__text2 {
+    margin-top: 16px;
+
+    @media screen and (min-width: @desktop) {
+      margin-top: 24px;
+    }
+  }
+
+  &__list {
+    margin-top: 16px;
+
+    list-style-position: inside;
+  }
+
+  &__text3 {
+    margin-top: 24px;
+
+    color: @color-dark-medium;
+
+    @media screen and (min-width: @desktop) {
+      margin-top: 48px;
+
+      font-size: 24px;
+      line-height: 32px;
+    }
+  }
+
+  &__error-title {
+    margin-bottom: 24px;
+
+    font-size: 24px;
+    line-height: 32px;
+
+    @media screen and (min-width: @desktop) {
+      margin-bottom: 32px;
+
+      font-size: 40px;
+      line-height: 48px;
+    }
+  }
+
+  &__error-text {
+    color: @color-dark-medium;
+
+    @media screen and (min-width: @desktop) {
+      color: @color-dark-medium;
+
+      font-size: 24px;
+      line-height: 32px;
+    }
+  }
+}

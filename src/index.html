@@ -533,6 +533,20 @@
     <footer class="footer">
       <div class="container">
         <div class="footer__wrapper">
+          <a
+            href="#popup-success"
+            data-effect="mfp-zoom-in"
+            class="js-popup-success"
+          >
+            THX
+          </a>
+          <a
+            href="#popup-error"
+            data-effect="mfp-zoom-in"
+            class="js-popup-error"
+          >
+            Error
+          </a>
           <p class="footer__text">
             ИП&nbsp;Яхьяев&nbsp;Магомед&nbsp;Расулович ИНН&nbsp;772172927807
           </p>
@@ -540,6 +554,44 @@
         </div>
       </div>
     </footer>
+    <!-- popup thx -->
+    <div id="popup-success" class="popup mfp-with-anim mfp-hide">
+      <svg class="icon success">
+        <use xlink:href="#done"></use>
+      </svg>
+      <div class="popup__title text-center">ВАШ КОД:</div>
+      <div class="popup__code text-center js_pay__code">XX11235813213455</div>
+      <div class="popup__points">
+        <p class="popup__text1 text-center">
+          Мы так же отправили его на введенный Вами e-mail
+        </p>
+        <p class="popup__text2">Для активации кода подарочной карты:</p>
+        <ol class="popup__list">
+          <li class="popup__item">Перейдите в настройки вашего iPhone</li>
+          <li class="popup__item">
+            Apple ID (самый верхний пункт с фото и Вашим именем)
+          </li>
+          <li class="popup__item">Оплата и доставка</li>
+          <li class="popup__item">Apple ID</li>
+          <li class="popup__item">Ввести код</li>
+          <li class="popup__item">Ввести код вручную</li>
+        </ol>
+      </div>
+      <p class="popup__text3 text-center">
+        Если у вас есть вопросы, напишите нам help@neonpay.ru
+      </p>
+    </div>
+
+    <!-- popup error -->
+    <div id="popup-error" class="popup text-center mfp-with-anim mfp-hide">
+      <svg class="icon error">
+        <use xlink:href="#close"></use>
+      </svg>
+      <div class="popup__error-title">Платеж не был совершен</div>
+      <div class="popup__error-text">
+        Если у вас есть вопросы, напишите&nbsp;нам help@neonpay.ru
+      </div>
+    </div>
     <script src="js/fontfaceobserver.js"></script>
     <script>
       const ubuntuObserver = new FontFaceObserver('SFUIDisplay')
